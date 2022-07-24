@@ -3,7 +3,8 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      
+      <h1>App</h1>
+      <a href="/anime">Anime</a>
     </div>
   );
 }
