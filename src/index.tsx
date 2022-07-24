@@ -10,9 +10,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/search' element={<Search />}></Route>
-        <Route path='/anime' element={<AnimeInfo />} />
+        <Route path='/anime-webapp' element={<App />} />
+        <Route path='/anime-webapp/search' element={<Search />}></Route>
+        <Route path='/anime-webapp/anime' element={<AnimeInfo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
