@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function AnimeInfo() {
   return (
     <div className="Anime">
       <h1>Anime</h1>
-      <a href="/anime-webapp">Index</a>
+      <Link to="/">Index</Link>
     </div>
   );
 }
