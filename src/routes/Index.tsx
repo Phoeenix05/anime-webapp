@@ -2,12 +2,12 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles'
 
-function AnimeInfo() {
+function Index() {
   return (
-    <div className="Anime">
-      <Navbar title="Anime"></Navbar>
+    <div className="App">
+      <Navbar title="App"></Navbar>
     </div>
   );
 }
 
-export default AnimeInfo;
+export default Index;

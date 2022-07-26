@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import Navbar from '../components/Navbar';
+import '../styles'
 
 function Search() {
   return (
     <div className="Search">
-      <h1>Search</h1>
-      <Link to="/">Index</Link>
+      <Navbar title="Search"></Navbar>
     </div>
   );
 }
