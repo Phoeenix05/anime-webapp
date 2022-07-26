@@ -1,0 +1,2 @@
+@media (prefers-color-scheme:dark){:root{--bg-color:#232323;--text-color:#fff}}@media (prefers-color-scheme:light){:root{--bg-color:#fff;--text-color:#000}}body,html{background-color:var(--bg-color)}*{color:var(--text-color)}
+/*# sourceMappingURL=main.93be89f8.css.map*/
