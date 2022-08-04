@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/anime-webapp/static/css/main.93be89f8.css",
-    "main.js": "/anime-webapp/static/js/main.44809ef5.js",
-    "index.html": "/anime-webapp/index.html",
-    "main.93be89f8.css.map": "/anime-webapp/static/css/main.93be89f8.css.map",
-    "main.44809ef5.js.map": "/anime-webapp/static/js/main.44809ef5.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.93be89f8.css",
-    "static/js/main.44809ef5.js"
-  ]
+    "main.js": "/static/js/main.3384048a.chunk.js",
+    "runtime~main.js": "/static/js/runtime~main.43fd4fb9.js",
+    "static/js/2.e1bc9d52.chunk.js": "/static/js/2.e1bc9d52.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.f65c0943731d23a8741172c007d8f772.js": "/precache-manifest.f65c0943731d23a8741172c007d8f772.js",
+    "service-worker.js": "/service-worker.js"
+  }
 }
