@@ -1,0 +1,1 @@
+html{background:var(--bg-color)}html *{color:var(--text-color)}@media(prefers-color-scheme:dark){:root{--bg-color:#161616;--text-color:#fff}}@media(prefers-color-scheme:light){:root{--bg-color:#fff}}

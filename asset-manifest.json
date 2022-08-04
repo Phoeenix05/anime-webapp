@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.js": "/anime-webapp/static/js/main.3384048a.chunk.js",
-    "runtime~main.js": "/anime-webapp/static/js/runtime~main.6fd6b3ea.js",
-    "static/js/2.e1bc9d52.chunk.js": "/anime-webapp/static/js/2.e1bc9d52.chunk.js",
+    "main.css": "/anime-webapp/static/css/main.a054db82.chunk.css",
+    "main.js": "/anime-webapp/static/js/main.e833446b.chunk.js",
+    "runtime~main.js": "/anime-webapp/static/js/runtime~main.c366cadc.js",
+    "static/js/2.0c5525d3.chunk.js": "/anime-webapp/static/js/2.0c5525d3.chunk.js",
+    "static/js/3.d8114f9a.chunk.js": "/anime-webapp/static/js/3.d8114f9a.chunk.js",
+    "static/js/4.9b03f37b.chunk.js": "/anime-webapp/static/js/4.9b03f37b.chunk.js",
+    "static/js/5.dbb9850a.chunk.js": "/anime-webapp/static/js/5.dbb9850a.chunk.js",
     "index.html": "/anime-webapp/index.html",
-    "precache-manifest.e3dd14606fb26e20d6f22cc0ecc094b8.js": "/anime-webapp/precache-manifest.e3dd14606fb26e20d6f22cc0ecc094b8.js",
+    "precache-manifest.6bfb629c0d57b5ce79d11ba3d7889c49.js": "/anime-webapp/precache-manifest.6bfb629c0d57b5ce79d11ba3d7889c49.js",
     "service-worker.js": "/anime-webapp/service-worker.js"
   }
 }
