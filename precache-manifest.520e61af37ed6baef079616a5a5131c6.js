@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "76ca96adae7006cc21064120cac6ff72",
+    "revision": "25757abf8b5720edc218042d41c3be79",
     "url": "/anime-webapp/index.html"
   },
   {
-    "revision": "f122d3b9497e6841e9a7",
+    "revision": "9d55b2a47af9ca515410",
     "url": "/anime-webapp/static/css/main.a054db82.chunk.css"
   },
   {
-    "revision": "dcf4404fdccd678d347b",
-    "url": "/anime-webapp/static/js/2.0c5525d3.chunk.js"
+    "revision": "2d5357c5deadc366de1a",
+    "url": "/anime-webapp/static/js/2.ccacfa24.chunk.js"
   },
   {
     "revision": "2c732214e89e1a97ac28",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anime-webapp/static/js/5.dbb9850a.chunk.js"
   },
   {
-    "revision": "f122d3b9497e6841e9a7",
-    "url": "/anime-webapp/static/js/main.e833446b.chunk.js"
+    "revision": "9d55b2a47af9ca515410",
+    "url": "/anime-webapp/static/js/main.c961f612.chunk.js"
   },
   {
     "revision": "b84265771dd41cbd244e",
