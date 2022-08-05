@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{8:function(n,e,o){"use strict";o.r(e),o.d(e,"default",(function(){return u}));var t=o(1);const c=Object(t.f)("<h1>Anime</h1>",2);function u(){return c.cloneNode(!0)}}}]);
