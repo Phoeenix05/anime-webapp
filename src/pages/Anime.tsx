@@ -27,7 +27,7 @@ export default function Anime() {
     
     setLoading(false)
   }
-  fetchData()
+  createEffect(() => fetchData())
 
   return <>
     <h1>Anime</h1>
