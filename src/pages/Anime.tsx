@@ -1,12 +1,7 @@
 import { useParams } from "@solidjs/router"
 import { createEffect, createSignal } from "solid-js"
-
-export interface IAnimeInfo {
-  mal_id: number,
-  url: string,
-  title: string,
-  episodes: number
-}
+import { getAnimeById } from "../api/jikan/anime[id]"
+import { IAnimeInfo } from "../interfaces/AnimeInfo"
 
 export default function Anime() {
   const params = useParams()                         // Page parameters
@@ -14,16 +9,8 @@ export default function Anime() {
   const [info, setInfo] = createSignal<IAnimeInfo>() // data
 
   const fetchData = async () => {
-    const data = await fetch(`https://api.jikan.moe/v4/anime/${params.id}`)
-      .then(res => res.json())
-      .then(json => json.data)
-    
-    setInfo({
-      mal_id: data.mal_id,
-      url: data.url,
-      title: data.title,
-      episodes: data.episodes
-    })
+    const data = await getAnimeById(parseInt(params.id)).then(data => data)
+    setInfo(data)
     
     setLoading(false)
   }
