@@ -1,0 +1,9 @@
+{
+  "emmet.includeLanguages": {
+    "typescriptreact": "html" 
+  },
+  "files.autoSaveDelay": 2000,
+  "docwriter.style": "Auto-detect",
+  "docwriter.language": "English",
+  "docwriter.hotkey.mac": "⌥ + ."
+}
