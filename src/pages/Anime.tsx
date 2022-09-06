@@ -1,7 +1,8 @@
 import { useParams } from "@solidjs/router"
 import { createEffect, createSignal } from "solid-js"
-import { getAnimeById, getAnimeByIdFull } from "../api/mal/anime[id]"
-import { IAnimeInfo, IAnimeInfoFull } from "../interfaces/AnimeInfo"
+import { getAnimeById } from "../api/KitsuAnime"
+import AnimePoster from "../components/AnimePoster"
+import { IAnimeInfo } from "../interfaces/AnimeInfo"
 
 export default function Anime() {
   const params = useParams()                         // Page parameters
@@ -17,9 +18,6 @@ export default function Anime() {
 
   return <>
     <h1>Anime</h1>
-    { loading() ? <p>Loading</p> : <div class="anime_info">
-      <p>{ info()?.id }</p>
-      <p>{ info()?.title }</p>
-    </div> }
+    { loading() ? <p>Loading</p> : <AnimePoster data={info()}></AnimePoster> }
   </>
 }

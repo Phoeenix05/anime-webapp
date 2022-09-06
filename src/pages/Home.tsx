@@ -4,7 +4,7 @@ export default function Home() {
   return <>
     <h1>Home</h1>
     <div class="content">
-      {/* <AnimeList title="" order="" /> */}
+      <AnimeList title="Trending" url="https://kitsu.io/api/edge/trending/anime" />
     </div>
   </>
 }

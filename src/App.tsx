@@ -11,7 +11,7 @@ export default function App() {
       <Route path="/" component={Home} />
       {/* <Route path="/anime" component={Anime} /> */}
       <Route path="/anime/:id" component={Anime} />
-      <Route path="/search" component={Search} />
+      <Route path="/search/:name" component={Search} />
       <Route path="/*" element={<h1>Not found</h1>} />
     </Routes>
   </>

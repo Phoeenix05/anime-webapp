@@ -1,112 +1,102 @@
 
 export interface IAnimeInfo {
-  id:                       number;
-  title:                    string;
-  main_picture:             Picture;
-  start_date:               string;
-  synopsis:                 string;
-  mean:                     number;
-  media_type:               string;
-  genres:                   Genre[];
-  num_episodes:             number;
-  rating:                   string;
+  id:            string;
+  type:          string;
+  links:         DatumLinks;
+  attributes:    Attributes;
+  relationships: { [key: string]: Relationship };
 }
 
-export interface IAnimeInfoFull {
-  id:                       number;
-  title:                    string;
-  main_picture:             Picture;
-  alternative_titles:       AlternativeTitles;
-  start_date:               string;
-  end_date:                 string;
-  synopsis:                 string;
-  mean:                     number;
-  rank:                     number;
-  popularity:               number;
-  num_list_users:           number;
-  num_scoring_users:        number;
-  nsfw:                     string;
-  created_at:               string;
-  updated_at:               string;
-  media_type:               string;
-  status:                   string;
-  genres:                   Genre[];
-  my_list_status:           MyListStatus;
-  num_episodes:             number;
-  start_season:             StartSeason;
-  broadcast:                Broadcast;
-  source:                   string;
-  average_episode_duration: number;
-  rating:                   string;
-  pictures:                 Picture[];
-  background:               string;
-  related_anime:            RelatedAnime[];
-  related_manga:            any[];
-  recommendations:          Recommendation[];
-  studios:                  Genre[];
-  statistics:               Statistics;
+interface Attributes {
+  createdAt:           string;
+  updatedAt:           string;
+  slug:                string;
+  synopsis:            string;
+  coverImageTopOffset: number;
+  titles:              Titles;
+  canonicalTitle:      string;
+  abbreviatedTitles:   string[];
+  averageRating:       string;
+  ratingFrequencies:   { [key: string]: string };
+  userCount:           number;
+  favoritesCount:      number;
+  startDate:           string;
+  endDate:             string;
+  popularityRank:      number;
+  ratingRank:          number;
+  ageRating:           string;
+  ageRatingGuide:      string;
+  subtype:             string;
+  status:              string;
+  tba:                 string;
+  posterImage:         PosterImage;
+  coverImage:          CoverImage;
+  episodeCount:        number;
+  episodeLength:       number;
+  youtubeVideoId:      string;
+  showType:            string;
+  nsfw:                boolean;
 }
 
-export interface AlternativeTitles {
-  synonyms: string[];
-  en:       string;
-  ja:       string;
+interface CoverImage {
+  tiny:     string;
+  small:    string;
+  large:    string;
+  original: string;
+  meta:     CoverImageMeta;
 }
 
-export interface Broadcast {
-  day_of_the_week: string;
-  start_time:      string;
+interface CoverImageMeta {
+  dimensions: Dimensions;
 }
 
-export interface Genre {
-  id:   number;
-  name: string;
+interface Dimensions {
+  tiny:    Large;
+  small:   Large;
+  large:   Large;
+  medium?: Large;
 }
 
-export interface Picture {
-  medium: string;
-  large:  string;
+interface Large {
+  width:  null;
+  height: null;
 }
 
-export interface MyListStatus {
-  status:               string;
-  score:                number;
-  num_episodes_watched: number;
-  is_rewatching:        boolean;
-  updated_at:           string;
+interface PosterImage {
+  tiny:     string;
+  small:    string;
+  medium:   string;
+  large:    string;
+  original: string;
+  meta:     CoverImageMeta;
 }
 
-export interface Recommendation {
-  node:                Node;
-  num_recommendations: number;
+interface Titles {
+  en:    string;
+  en_jp: string;
+  ja_jp: string;
 }
 
-export interface Node {
-  id:           number;
-  title:        string;
-  main_picture: Picture;
+interface DatumLinks {
+  self: string;
 }
 
-export interface RelatedAnime {
-  node:                    Node;
-  relation_type:           string;
-  relation_type_formatted: string;
+interface Relationship {
+  links: RelationshipLinks;
 }
 
-export interface StartSeason {
-  year:   number;
-  season: string;
+interface RelationshipLinks {
+  self:    string;
+  related: string;
 }
 
-export interface Statistics {
-  status:         Status;
-  num_list_users: number;
+interface IAnimeInfoLinks {
+  first: string;
+  prev:  string;
+  next:  string;
+  last:  string;
 }
 
-export interface Status {
-  watching:      string;
-  completed:     string;
-  on_hold:       string;
-  dropped:       string;
-  plan_to_watch: string;
+interface IAnimeInfoMeta {
+  count: number;
 }

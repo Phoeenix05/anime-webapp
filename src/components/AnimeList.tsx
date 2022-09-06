@@ -3,18 +3,25 @@ import { IAnimeInfo } from "../interfaces/AnimeInfo"
 import AnimePoster from "./AnimePoster"
 
 interface IAnimeList {
+  href: string | URL
   title: string
-  order: string
+  limit: number
 }
 
-export default function AnimeList({title, order}: IAnimeList) {
+export default function AnimeList({title, href, limit}: IAnimeList) {
   const [loading, setLoading] = createSignal(true)
   const [animeList, setAnimeList] = createSignal<IAnimeInfo[]>([], { equals: false })
 
   const fetchData = async () => {
-    // setAnimeList(animeList => [...data, ...animeList])
+    const url = new URL(href)
+    url.searchParams.append("page[limit]", limit.toString())
 
-    // setLoading(false)
+    const data = await fetch(url)
+      .then(res => res.json())
+      .then(json => json.data)
+    setAnimeList(animeList => [...data, ...animeList])
+
+    setLoading(false)
   } 
   createEffect(() => fetchData())
   
