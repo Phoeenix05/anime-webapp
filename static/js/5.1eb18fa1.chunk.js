@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{9:function(n,c,e){"use strict";e.r(c),e.d(c,"default",(function(){return r}));var o=e(1);const t=Object(o.g)("<h1>Search</h1>",2);function r(){return t.cloneNode(!0)}}}]);
